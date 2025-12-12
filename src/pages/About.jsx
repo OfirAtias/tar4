@@ -29,13 +29,11 @@ export default function About() {
       </h2>
 
       <p style={{ fontSize: "1.2rem", lineHeight: "1.8", color: "#ddd" }}>
-        This website was built as part of <strong>Assignment 4</strong> in the
-        React course.
-        <br />
-        <br />
-        It demonstrates the use of <strong>React Router</strong> for navigation,
-        dynamic routing, and creating a Single Page Application (SPA)
-        experience.
+        This project serves as a digital gateway to the Star Wars galaxy,
+        allowing users to explore legendary characters from both the Light and
+        Dark sides. Built as a Single Page Application (SPA), it utilizes React
+        Router to provide a seamless and dynamic navigation experience across
+        the universe.
       </p>
     </div>
   );

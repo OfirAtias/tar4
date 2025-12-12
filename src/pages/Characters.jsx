@@ -24,7 +24,7 @@ export default function Characters() {
               style={{
                 display: "block",
                 textDecoration: "none",
-                color: "#00d2ff", // כחול ניאון בהיר
+                color: "#00d2ff",
                 fontSize: "1.5rem",
                 padding: "15px",
                 border: "1px solid rgba(0, 210, 255, 0.3)",
@@ -33,7 +33,6 @@ export default function Characters() {
                 transition: "0.3s all",
                 letterSpacing: "2px",
               }}
-              // אפקט מעבר עכבר (inline קצת טריקי ב-React, אז נעשה את זה פשוט)
               onMouseOver={(e) => {
                 e.currentTarget.style.backgroundColor =
                   "rgba(0, 210, 255, 0.1)";

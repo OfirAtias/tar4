@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const linkStyle = ({ isActive }) => ({
-    color: isActive ? "#FFE81F" : "white", 
+    // Note: Changed colors to match the Star Wars theme (Yellow/White) instead of Red/Black
+    color: isActive ? "#FFE81F" : "white",
     fontWeight: isActive ? "bold" : "normal",
     margin: "0 20px",
     textDecoration: "none",

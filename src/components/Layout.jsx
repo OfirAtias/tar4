@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "./Navbar"; // שניהם באותה תיקייה (components), אז זה תקין
+import Navbar from "./Navbar";
 
 export default function Layout() {
   return (
@@ -8,7 +8,8 @@ export default function Layout() {
       style={{
         display: "flex",
         flexDirection: "column",
-        minHeight: "100vh",
+        height: "100vh",
+        overflow: "hidden",
       }}
     >
       <header>
@@ -22,6 +23,10 @@ export default function Layout() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          overflowY: "auto",
+          width: "100%",
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgba(0, 210, 255, 0.3) transparent",
         }}
       >
         <Outlet />
@@ -33,8 +38,9 @@ export default function Layout() {
           color: "#888",
           padding: "15px",
           borderTop: "1px solid rgba(255,255,255,0.1)",
-          backgroundColor: "rgba(0,0,0,0.8)",
+          backgroundColor: "rgba(0,0,0,0.9)",
           fontSize: "0.9rem",
+          zIndex: 10,
         }}
       >
         <p>© 2025 Star Wars Fan Site | React Course Assignment</p>

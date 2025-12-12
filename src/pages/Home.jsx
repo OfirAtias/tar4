@@ -6,27 +6,25 @@ export default function Home() {
     <div
       style={{
         textAlign: "center",
-        height: "80vh", // תופס את גובה המסך
-        display: "flex", // שימוש בפלקס לסידור
-        flexDirection: "column", // מלמעלה למטה
-        justifyContent: "center", // מירכוז אנכי
-        alignItems: "center", // מירכוז אופקי
+        height: "80vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
-      {/* כותרת ראשית בעיצוב ניאון צהוב (כמו הלוגו) */}
       <h1
         style={{
           fontSize: "4rem",
-          color: "#FFE81F", // הצהוב של מלחמת הכוכבים
-          textShadow: "0 0 20px rgba(255, 232, 31, 0.6)", // הילה זוהרת
+          color: "#FFE81F",
+          textShadow: "0 0 20px rgba(255, 232, 31, 0.6)",
           marginBottom: "20px",
           textTransform: "uppercase",
         }}
       >
-        Welcome to the Galaxy
+        Welcome to the Star Wars Website
       </h1>
 
-      {/* תת-כותרת */}
       <p
         style={{
           fontSize: "1.5rem",
@@ -35,8 +33,8 @@ export default function Home() {
           textShadow: "0 0 5px black",
         }}
       >
-        Explore the characters, choose your side, and discover the force within
-        you.
+        Here you can find information about your favorite characters from the
+        galaxy far, far away.
       </p>
     </div>
   );

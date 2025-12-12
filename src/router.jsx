@@ -21,17 +21,14 @@ export const router = createBrowserRouter([
         path: "about",
         element: <About />,
       },
-      // הוספת נתיב לרשימת הדמויות [cite: 59-60]
       {
         path: "characters",
         element: <Characters />,
       },
-      // הוספת נתיב דינמי לדף פרטים (עם פרמטר id) [cite: 69-70]
       {
         path: "characters/:id",
         element: <CharacterDetails />,
       },
-      // הוספת נתיב Catch All לטיפול בשגיאות 404 [cite: 73-75]
       {
         path: "*",
         element: <NotFound />,

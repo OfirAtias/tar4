@@ -3,9 +3,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Characters from "./pages/Characters"; // ייבוא חדש
-import CharacterDetails from "./pages/CharacterDetails"; // ייבוא חדש
-import NotFound from "./pages/NotFound"; // ייבוא חדש
+import Characters from "./pages/Characters"; 
+import CharacterDetails from "./pages/CharacterDetails"; 
+import NotFound from "./pages/NotFound"; 
 
 export const router = createBrowserRouter([
   {

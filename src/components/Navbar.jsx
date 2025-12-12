@@ -2,34 +2,34 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
-  // פונקציית העיצוב לקישור פעיל (לפי דרישה סעיף 3)
   const linkStyle = ({ isActive }) => ({
-    color: isActive ? "red" : "black",
+    color: isActive ? "#FFE81F" : "white", 
     fontWeight: isActive ? "bold" : "normal",
-    margin: "0 10px",
+    margin: "0 20px",
     textDecoration: "none",
     fontSize: "1.2rem",
+    textShadow: isActive ? "0 0 10px #FFE81F" : "none",
+    transition: "0.3s",
   });
 
   return (
     <nav
       style={{
-        padding: "15px",
-        backgroundColor: "#e9ecef",
+        padding: "20px",
         textAlign: "center",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backdropFilter: "blur(5px)",
+        borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
       }}
     >
-      {/* קישור לדף הבית */}
       <NavLink to="/" style={linkStyle}>
-        בית
+        Home
       </NavLink>
-      |{/* קישור לדף אודות */}
       <NavLink to="/about" style={linkStyle}>
-        אודות
+        About
       </NavLink>
-      |{/* קישור לדף הדמויות (ניצור אותו בהמשך) */}
       <NavLink to="/characters" style={linkStyle}>
-        דמויות
+        Characters
       </NavLink>
     </nav>
   );
